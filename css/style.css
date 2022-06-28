@@ -1,0 +1,485 @@
+@import url("components/banner.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@mixin flexbox() {
+    display: -webkit-box;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif;;
+}
+#hero .cta{
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+/* hero Section */
+#hero {
+    background-image: url(https://www.uncovercolorado.com/wp-content/uploads/2020/06/vail-ski-resort-blue-sky-basin-powder.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .55;
+    z-index: -1;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h3 {
+    font-weight: 100;
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 1.5s ease forwards;
+    animation-delay: 2.3s;
+}
+#hero h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+#hero h3:nth-child(1) {
+    animation-delay: 3s;
+}
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: crimson ;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .3s;
+}
+#hero h3 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: crimson ;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1.9s;
+}
+#hero h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+/* I could add more child elements using the syntax above and putting
+different child numbers*/
+
+#hero .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid crimson;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    border-radius: 3%;
+}
+#hero .cta:hover {
+    color: white;
+    background-color: crimson;
+}
+
+/* end hero setion */
+
+/* Services Section*/
+#services .services {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#services .section-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#services .section-title span {
+    color: crimson;
+}
+#services .service-top {
+    width: 500px;
+    margin: 0 auto;
+}
+#services .service-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: .05rem;
+
+}
+#services .service-top span {
+    color: crimson;
+}
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#services .service-bottom h2:hover  {
+    transform: scale(1.2);
+    transition-delay: .1s;
+    transition: all .3s ease-in-out;
+}
+/* this is where i put the animation to make the doctor and shit go to black when hovering*/
+#services .list {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, black, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .3s ease-in-out;
+}
+#services .list::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all .3 ease-in-out;
+}
+#services .list:hover {
+    background-position: 0;
+}
+#services .list:hover::before {
+    width: 100%;
+}
+/* End hover effect section */
+
+#services .service-bottom h2 {
+    background-color: transparent;
+    box-shadow: none;
+}
+#services .service-item-1 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/skiing film.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-item-2 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/cali.mountains.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-item-3 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/chungus\ moment.JPG");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-item-4 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/jeeperton\ cb.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-bottom h2 {
+    color: white;
+    opacity: .8;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#services .service-bottom p {
+    text-align: left;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+#services .service-bottom h2:hover {
+    color: black;
+}
+/* End Services Section*/
+
+/* disclaimer section */
+#disclaimer .disclaimer {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+#disclaimer .disclaimer-header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#disclaimer .disclaimer-content p {
+    margin-top: 15px;
+    line-height: 1.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid crimson;
+    padding: 30px 20px;
+    
+}
+/*end of disclaimer section*/
+
+/* contact section */
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contact h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;  
+}
+#contact .contact-items {
+    width: 425px;
+}
+#contact .contact-item {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    flex-direction: column;
+    transition: .25s ease box-shadow;
+}
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000003c;
+}
+#contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contact-info h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+#contact .contact-info h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2rem;
+}
+
+/* End of contact section */
+/* Footer */
+#footer {
+    background-image: linear-gradient(180deg, #4c4c4c 0%, #1d1c1c 100%);
+    opacity: .8;
+}
+#footer .footer {
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    text-transform: uppercase;
+    filter: grayscale(0);
+}
+#footer .brand {
+    color: #e0dfde;
+}
+#footer h3 {
+    color: gray;
+}
+/* END of Footer */
+
+
+/* Keyframes */
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0%;
+    }
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+
+/* End Keyframes */
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+    #hero .cta {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+    #hero h1 {
+        font-size: 5.5rem;
+    }
+    #hero h3 {
+        font-size: 3rem;
+    }
+    #services .service-top h1 {
+        font-size: 5rem;
+    }
+    #services .service-bottom .service-item-1 {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    #services .service-bottom .service-item-2 {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    #services .service-bottom .service-item-3 {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    #services .service-bottom .service-item-4 {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    #disclaimer .disclaimer-header h1 {
+        font-size: 5.5rem;
+    }
+    #contact .contact h1 {
+        font-size: 4rem;
+    }
+    #contact .contact {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+    #contact .contact-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        margin: 100px;
+    }
+    #contact .contact-item {
+        margin: 10px;
+        flex-direction: column;
+    }
+    #contact .contact-item .icon {
+        height: 80px;
+        width: 80px;
+    }
+    #contact .contact-item .icon img {
+        object-fit: contain;
+    }
+    #contact .contact-item .contact-info {
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #services .service-bottom .service-item-4 {
+        flex-basis: 81%;
+        margin: 1.5%;
+    }
+    #services .service-bottom .service-item-1 {
+        flex-basis: 25%;
+        margin: 1.5%;
+    }
+    #services .service-bottom .service-item-2 {
+        flex-basis: 25%;
+        margin: 1.5%;
+    }
+    #services .service-bottom .service-item-3 {
+        flex-basis: 25%;
+        margin: 1.5%;
+    }
+
+}
+
+/* END media query for tablet */
