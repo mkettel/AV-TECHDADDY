@@ -20,7 +20,7 @@ html{
     
 }
 .container {
-    min-height: 100vh;
+   
     width: 100%;
     display: flex;
     align-items: center;
@@ -35,6 +35,7 @@ html{
     z-index: 1;
 }
 #hero .hero {
+    min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
@@ -283,7 +284,7 @@ different child numbers*/
 #disclaimer .disclaimer {
     flex-direction: column;
     text-align: center;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -304,16 +305,17 @@ different child numbers*/
     border: 1px solid crimson;
     padding: 30px 20px;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 /*end of disclaimer section*/
 
 /* contact section */
+
 #contact .contact {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: 40px 0;
 }
 
 #contact h1 {
@@ -440,7 +442,7 @@ different child numbers*/
         font-size: 5.5rem;
     }
     #contact .contact h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
     #contact .contact {
         flex-direction: column;
