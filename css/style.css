@@ -4,12 +4,12 @@
     display: -webkit-box;
 }
 
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 
 html{
     font-size: 14px;
@@ -17,6 +17,7 @@ html{
 }
 #hero .cta{
     text-decoration: none;
+    
 }
 .container {
     min-height: 100vh;
@@ -49,6 +50,7 @@ html{
     background-color: black;
     opacity: .55;
     z-index: -1;
+    
 }
 #hero h1 {
     display: block;
@@ -106,7 +108,7 @@ different child numbers*/
     padding: 10px 20px;
     color: white;
     background-color: transparent;
-    border: 1px solid crimson;
+    border: 2px solid crimson;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -114,6 +116,8 @@ different child numbers*/
     transition: .3s ease;
     transition-property: background-color, color;
     border-radius: 3%;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: 6px 8px 5.5px 0 #ffffff3c;
 }
 #hero .cta:hover {
     color: white;
@@ -275,12 +279,13 @@ different child numbers*/
 /* End Services Section*/
 
 /* disclaimer section */
+
 #disclaimer .disclaimer {
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 40px 0;
 }
 #disclaimer .disclaimer-header h1 {
     font-size: 3rem;
@@ -298,7 +303,8 @@ different child numbers*/
     font-weight: 300;
     border: 1px solid crimson;
     padding: 30px 20px;
-    
+    margin-left: 50px;
+    margin-right: 50px;
 }
 /*end of disclaimer section*/
 
@@ -307,7 +313,9 @@ different child numbers*/
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
 }
+
 #contact h1 {
     font-size: 3rem;
     font-weight: 400;
@@ -315,7 +323,8 @@ different child numbers*/
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    text-align: center;  
+    text-align: center; 
+   
 }
 #contact .contact-items {
     width: 425px;
@@ -330,9 +339,10 @@ different child numbers*/
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 18px 0 #0000002c;
+    box-shadow: 20px 10px 28px 0 #0000002c;
     flex-direction: column;
     transition: .25s ease box-shadow;
+    background-color: #e1e2e2;
 }
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 #0000003c;
@@ -345,6 +355,7 @@ different child numbers*/
 #contact .contact-info h2{
     font-size: 2rem;
     font-weight: 400;
+   
 }
 #contact .contact-info h3 {
     font-size: 1.5rem;
@@ -389,6 +400,7 @@ different child numbers*/
 @keyframes text_reveal {
     100% {
         color: white;
+        text-shadow: 1.5px 1.5px 4px black;
     }
 }
 
