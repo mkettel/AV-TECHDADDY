@@ -1,5 +1,6 @@
+/*title header section*/
 #title {
-    background-image: url("https://images.unsplash.com/photo-1514975440715-7b6852af4ee7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fHdoaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.7) 40%), url("https://images.unsplash.com/photo-1520094481912-968fc0a1c087?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
     background-size: cover;
 }
 
@@ -16,11 +17,12 @@
 }
 #title .doctor-heading h1 {
     text-align: center;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 40px;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
+   
 }
 #title .description {
     margin-top: 10px;
@@ -30,30 +32,39 @@
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
-}
+} 
+/*END Title Header Section*/
 
-#c-list .list {
+/*list section*/
+#e-list .list {
     display: flex;
     justify-content: center;
+   
     text-align: center;
     margin-top: 70px;
 }
-#c-list .company-list p {
+#e-list .equipment-list p {
     font-size: 26px;
     font-weight: 200;
     color: transparent;
-    animation: text_reveal .9s ease forwards;
+    animation: text_reveal_2 .9s ease forwards;
     animation-delay: 1.2s;
 }
 hr {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 10px;
     margin-top: 30px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
 }
+/*END List Section*/
 @keyframes text_reveal {
     100% {
-        color: black;
+        color: white;
        
+    }
+}
+@keyframes text_reveal_2 {
+    100% {
+        color: black
     }
 }

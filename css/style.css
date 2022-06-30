@@ -1,6 +1,7 @@
 @import url("components/banner.css");
 @import url("components/doctor.css");
 @import url("components/company.css");
+@import url("components/equipment.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 @mixin flexbox() {
     display: -webkit-box;
@@ -118,7 +119,7 @@ different child numbers*/
     transition-property: background-color, color;
     border-radius: 3%;
     text-shadow: 1px 1px 0px black;
-    box-shadow: 6px 8px 5.5px 0 #ffffff3c;
+    box-shadow: 4px 6px 3.5px 0 #ffffff3c;
 }
 #hero .cta:hover {
     color: white;

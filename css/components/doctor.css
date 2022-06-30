@@ -62,7 +62,7 @@ hr {
        
     }
 }
-
+/*Scale to tablet size */
 @media only screen and (min-width: 768px) {
     #title .doctor-heading h1 {
         font-size: 46px;
@@ -76,3 +76,4 @@ hr {
         font-weight: 250px;
     }
 }
+/*END Scale to tablet size*/
