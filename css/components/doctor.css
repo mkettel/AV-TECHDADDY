@@ -1,4 +1,12 @@
 
+body {
+    background-color: white;
+}
+#title {
+    background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    background-size: cover;
+    margin-bottom: 30px;
+}
 #title .container {
     width: 100%;
     display: flex;
@@ -13,27 +21,58 @@
 #title .doctor-heading h1 {
     text-align: center;
     font-weight: 300;
+    font-size: 36px;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .4s;
 }
 #title .description {
     margin-top: 10px;
 }
 #title .description p {
     text-align: center;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+    font-weight: 200;
 }
-
-
 /*doctor list section*/
 #list .list {
     display: flex;  
     justify-content: space-around;
     margin-bottom: 20px;
 }
-#list .doctor-list {
-  
+#list .doctor-list p {
+    font-weight: 250;
+    color: transparent;
+    animation: text_reveal .9s ease forwards;
+    animation-delay: 1.2s;
+    font-size: 18px;
 }
 hr {
     margin-right: 50px;
     margin-left: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 /*END doctor list section*/
+
+@keyframes text_reveal {
+    100% {
+        color: black;
+       
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #title .doctor-heading h1 {
+        font-size: 46px;
+    }
+    #title .description p {
+        font-size: 19px;
+        font-weight: 200;
+    }
+    #list .doctor-list p {
+        font-size: 20px;
+        font-weight: 250px;
+    }
+}
