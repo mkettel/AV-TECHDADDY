@@ -1,4 +1,6 @@
 @import url("components/banner.css");
+@import url("components/doctor.css");
+@import url("components/company.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 @mixin flexbox() {
     display: -webkit-box;
@@ -17,10 +19,8 @@ html{
 }
 #hero .cta{
     text-decoration: none;
-    
 }
 .container {
-   
     width: 100%;
     display: flex;
     align-items: center;
@@ -315,7 +315,7 @@ different child numbers*/
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 #contact h1 {
@@ -337,7 +337,7 @@ different child numbers*/
     text-align: center;
     border-radius: 10px;
     padding: 30px;
-    margin: 30px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

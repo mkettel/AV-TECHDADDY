@@ -1,0 +1,39 @@
+
+#title .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45vh;
+}
+#title .title {
+    flex-direction: column;
+    max-width: 70%;
+}
+#title .doctor-heading h1 {
+    text-align: center;
+    font-weight: 300;
+}
+#title .description {
+    margin-top: 10px;
+}
+#title .description p {
+    text-align: center;
+}
+
+
+/*doctor list section*/
+#list .list {
+    display: flex;  
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+#list .doctor-list {
+  
+}
+hr {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+/*END doctor list section*/
