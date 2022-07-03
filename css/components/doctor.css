@@ -2,6 +2,9 @@
 body {
     background-color: white;
 }
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+}
 #title {
     background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
     background-size: cover;
@@ -34,7 +37,7 @@ body {
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
-    font-weight: 200;
+    font-weight: 245;
 }
 /*doctor list section*/
 #list .list {
@@ -59,6 +62,7 @@ hr {
 @keyframes text_reveal {
     100% {
         color: black;
+        text-shadow: .1px .1px .5px white;
        
     }
 }

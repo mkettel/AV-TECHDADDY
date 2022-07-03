@@ -1,9 +1,11 @@
 /*title header section*/
 #title {
-    background-image: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.7) 40%), url("https://images.unsplash.com/photo-1520094481912-968fc0a1c087?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+    background-image: linear-gradient(rgba(0,0,0,0.09) 0%, rgba(0,0,0,0.05) 40%), url("https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHdoaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
     background-size: cover;
 }
-
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+}
 #title .container {
     width: 100%;
     display: flex;
@@ -28,6 +30,7 @@
     margin-top: 10px;
 }
 #title .description p {
+    font-weight: 245;
     text-align: center;
     color: transparent;
     animation: text_reveal .7s ease forwards;
@@ -59,7 +62,8 @@ hr {
 /*END List Section*/
 @keyframes text_reveal {
     100% {
-        color: white;
+        color: black;
+        text-shadow: .1px .1px .5px white;
        
     }
 }

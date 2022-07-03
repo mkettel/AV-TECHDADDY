@@ -1,8 +1,10 @@
 #title {
-    background-image: url("https://images.unsplash.com/photo-1514975440715-7b6852af4ee7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fHdoaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.0) 40%), url("https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60");
     background-size: cover;
 }
-
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+}
 #title .container {
     width: 100%;
     display: flex;
@@ -21,11 +23,13 @@
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
+    
 }
 #title .description {
     margin-top: 10px;
 }
 #title .description p {
+    font-weight: 245;
     text-align: center;
     color: transparent;
     animation: text_reveal .7s ease forwards;
@@ -42,7 +46,7 @@
     font-size: 26px;
     font-weight: 200;
     color: transparent;
-    animation: text_reveal .9s ease forwards;
+    animation: text_reveal_2 .9s ease forwards;
     animation-delay: 1.2s;
 }
 hr {
@@ -54,6 +58,28 @@ hr {
 @keyframes text_reveal {
     100% {
         color: black;
+        text-shadow: .1px .1px .5px white;
        
     }
 }
+@keyframes text_reveal_2 {
+    100% {
+        color: black;
+       
+    }
+}
+/*Media Page*/
+@media only screen and (min-width: 768px) {
+    #title .doctor-heading h1 {
+        font-size: 46px;
+    }
+    #title .description p {
+        font-size: 19px;
+        font-weight: 200;
+    }
+    #c-list .company-list p {
+        font-size: 35px;
+        font-weight: 250px;
+    }
+}
+/*Media Scaling*/
