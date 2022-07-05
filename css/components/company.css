@@ -9,7 +9,6 @@
 #navbar .navbar-brand:hover {
     transform: scale(1.07);
     transition-delay: .1s;
-    
 }
 #title .container {
     width: 100%;
