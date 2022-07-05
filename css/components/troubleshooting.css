@@ -1,3 +1,11 @@
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+    transition: transform .3s ease-in-out;
+}
+#navbar .navbar-brand:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
 #title {
     background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.0) 40%), url("https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60");
     background-size: cover;
@@ -48,6 +56,19 @@
     color: transparent;
     animation: text_reveal_2 .9s ease forwards;
     animation-delay: 1.2s;
+}
+#c-list .company-list p {
+    transition: transform .3s;
+}
+#c-list .company-list p a {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+#c-list .company-list p:hover {
+    color: white;
+    transform: scale(1.1);
+    transition-delay: .1s;
 }
 hr {
     margin-top: 30px;

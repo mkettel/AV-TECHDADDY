@@ -1,4 +1,13 @@
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+    transition: transform .3s;
+}
+#navbar .navbar-brand:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
 /*title header section*/
+
 #title {
     background-image: linear-gradient(rgba(0,0,0,0.09) 0%, rgba(0,0,0,0.05) 40%), url("https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHdoaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
     background-size: cover;
@@ -47,11 +56,21 @@
     margin-top: 70px;
 }
 #e-list .equipment-list p {
+    transition: transform .3s;
+}
+#e-list .equipment-list p a {
     font-size: 26px;
     font-weight: 200;
     color: transparent;
     animation: text_reveal_2 .9s ease forwards;
     animation-delay: 1.2s;
+    text-decoration: none;
+}
+#e-list .equipment-list p:hover {
+    color: white;
+    transform: scale(1.1);
+    transition-delay: .1s;
+    
 }
 hr {
     margin-right: 60px;

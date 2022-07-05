@@ -1,4 +1,11 @@
-
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+    transition: transform .3s;
+}
+#navbar .navbar-brand:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
 body {
     background-color: white;
 }
@@ -46,19 +53,28 @@ body {
     margin-bottom: 20px;
 }
 #list .doctor-list p {
+    transition: transform .2s;
+}
+#list .doctor-list p a{
     font-weight: 250;
     color: transparent;
     animation: text_reveal .9s ease forwards;
     animation-delay: 1.2s;
-    font-size: 18px;
+    text-decoration: dashed;
+}
+#list .doctor-list p:hover {
+    color: white;
+    transform: scale(1.1);
+    transition-delay: .1s;
 }
 hr {
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 50px;
 }
-/*END doctor list section*/
 
+
+/*END doctor list section*/
 @keyframes text_reveal {
     100% {
         color: black;
@@ -66,6 +82,7 @@ hr {
        
     }
 }
+
 /*Scale to tablet size */
 @media only screen and (min-width: 768px) {
     #title .doctor-heading h1 {
