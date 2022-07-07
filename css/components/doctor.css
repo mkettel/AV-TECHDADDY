@@ -12,6 +12,13 @@ body {
 #navbar .navbar-brand {
     font-size: 1.6rem;
 }
+#navbar .nav-item {
+    transition: transform .3s;
+}
+#navbar .nav-item:hover {
+    transform: scale(1.015);
+    transition-delay: .1s;
+}
 #title {
     background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
     background-size: cover;
@@ -31,7 +38,7 @@ body {
 #title .doctor-heading h1 {
     text-align: center;
     font-weight: 200;
-    font-size: 36px;
+    font-size: 2.7rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
@@ -44,7 +51,8 @@ body {
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
-    font-weight: 245;
+    font-weight: 200;
+    font-size: 1.1rem;
 }
 /*doctor list section*/
 #list .list {
@@ -54,9 +62,10 @@ body {
 }
 #list .doctor-list p {
     transition: transform .2s;
+    font-size: 1.3rem;
 }
-#list .doctor-list p a{
-    font-weight: 250;
+#list .doctor-list p a {
+    font-weight: 220;
     color: transparent;
     animation: text_reveal .9s ease forwards;
     animation-delay: 1.2s;
@@ -93,7 +102,7 @@ hr {
         font-weight: 200;
     }
     #list .doctor-list p {
-        font-size: 20px;
+        font-size: 1.5rem;
         font-weight: 250px;
     }
 }
