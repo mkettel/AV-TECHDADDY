@@ -74,7 +74,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-around; /* -> where to layout the faxitron videos n shit */
     margin-bottom: 20px;
-    
+}
+#list .case-type {
+    font-weight: 100;
+    padding-bottom: 25px;
+    font-size: 2.5rem;
     
 }
 #list .doctor-list {
@@ -124,19 +128,18 @@ body {
     animation-delay: 1s;
 }
 
-hr {
+hr .video-separator{
     border: 1px solid grey;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-hr #video-separator {
-    border: 1px solid gray;
+hr .video-separator {
+    border: 1px solid blue;
 }
-/* USE THESE ATTRIBUTES WHEN ADDING A SIMPLE BLACK LINK IN THE TEXT*/
 #list .routing-help {
-    
+    text-decoration: none;
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: 1s;
@@ -200,6 +203,7 @@ hr #video-separator {
     max-height: 100px;
 }
 /*MAIN FOOTER BACKGROUND AND STYLE */
+
 /*FOOTER HEADER*/
 #footer-2 .footer-header {
     text-align: center;
@@ -219,6 +223,7 @@ hr #video-separator {
     text-transform: uppercase;
 }
 /* END FOOTER HEADER */
+
 /* LEFT CONTAINER */
 #footer-2 .footer-left {
     width: 50%;
