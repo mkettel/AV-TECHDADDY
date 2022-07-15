@@ -1,0 +1,285 @@
+/* Navbar CSS */
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+    transition: transform .3s;
+}
+#navbar .navbar-brand:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+body {
+    background-color: white;
+}
+#navbar .navbar {
+   /* position: fixed; This is if i want to make the bar sticky */
+    width: 100%;
+}
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+}
+#navbar .nav-item {
+    transition: transform .3s;
+}
+#navbar .nav-item:hover {
+    transform: scale(1.015);
+    transition-delay: .1s;
+}
+/* END Navbar CSS */
+
+/* Doctor Title Section */
+#title {
+    background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+#title .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45vh;
+    padding-top: 70px;
+
+}
+#title .title {
+    flex-direction: column;
+    max-width: 70%;
+}
+#title .doctor-heading h1 {
+   /*  margin-top: 100px; This is if i want to make navbar sticky */
+    text-align: center;
+    font-weight: 200;
+    font-size: 4.2rem;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .4s;
+}
+#title .description {
+    margin-top: 10px;
+}
+#title .description p {
+    text-align: center;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+    font-weight: 200;
+    font-size: 1.3rem;
+   /* margin-bottom: 30px; This is if I want to make navbar sticky */
+}
+/* Doctor Title Section */
+
+/* DOCTOR VIDEO SECTION */
+#list .list {
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; /* -> where to layout the faxitron videos n shit */
+    margin-bottom: 20px;
+}
+#list .case-type {
+    font-weight: 100;
+    padding-bottom: 20px;
+    font-size: 2.9rem;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .8s;
+}
+#list .doctor-list {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 100%;
+    text-align: center;
+    
+}
+#list .doctor-list h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: 300;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .9s;
+    
+}
+#list .video {
+    border-radius: 10px;
+    margin-top: 20px;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+}
+#list .description {
+    margin-top: 10px;
+}
+#list .description li {
+    font-size: 1.2rem;
+    font-weight: 250;
+    line-height: 1.9;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+}
+#list .description li span {
+    text-transform: uppercase;
+    color: transparent;
+    animation: text_reveal_red .8s ease forwards;
+    animation-delay: 1s;
+}
+#list .description li .green-text {
+    text-transform: uppercase;
+    color: transparent;
+    animation: text_reveal_green .7s ease forwards;
+    animation-delay: 1s;
+}
+
+hr {
+    border: 1px solid grey;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+hr #video-separator {
+    border: 1px solid gray;
+}
+#list .routing-help {
+    text-decoration: none;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+    transition: transform .3s;
+}
+#list .routing-help:hover {
+    transform: scale(2);
+    transition-delay: .1s;
+}
+#list .description p {
+    text-align: center;
+    font-weight: 500;
+}
+/*This is the spot where i added the link for more Arthrex videos */
+#list .description p {
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+}
+#list .description p .arthrex {
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+}
+#list .description p .arthrex:hover  {
+    color: blue;
+}
+
+/* END DOCTOR VIDEOS SECTION */
+
+
+/*END doctor list section*/
+@keyframes text_reveal {
+    100% {
+        color: black;
+        text-shadow: .1px .1px .5px white;
+       
+    }
+}
+@keyframes text_reveal_red {
+    100% {
+        color: red;
+    }
+}
+@keyframes text_reveal_green {
+    100% {
+        color: green;
+    }
+}
+
+/*Scale to tablet size */
+@media only screen and (min-width: 768px) {
+    #title .doctor-heading h1 {
+        font-size: 4rem;
+    }
+    #title .description p {
+        font-size: 1.25rem;
+        font-weight: 200;
+    }
+    #list .doctor-list p {
+        font-size: 1.1rem;
+        font-weight: 250px;
+    }
+}
+/*END Scale to tablet size*/
+
+/*TWO COLUMN FOOTER*/
+/*MAIN FOOTER BACKGROUND AND STYLE */
+#footer-2 {
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer-2 .footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-height: 100px;
+}
+/*MAIN FOOTER BACKGROUND AND STYLE */
+
+/*FOOTER HEADER*/
+#footer-2 .footer-header {
+    text-align: center;
+}
+#footer-2 .footer-header {
+    transition: transform .3s;
+}
+#footer-2 .footer-header:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-header h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+/* END FOOTER HEADER */
+
+/* LEFT CONTAINER */
+#footer-2 .footer-left {
+    width: 50%;
+    transition: transform .3s;
+}
+#footer-2 .footer-left h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 120;
+}
+#footer-2 .footer-left h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-left h2 {
+    transition: transform .3s;
+}
+/* END LEFT CONTAINER */
+/* RIGHT CONTAINER */
+#footer-2 .footer-right h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 120;
+}
+#footer-2 .footer-right h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-right h2 {
+    transition: transform .3s;
+}
+#footer-2 .footer-right {
+    width: 50%;
+}
+
+/* END RIGHT CONTAINER */
