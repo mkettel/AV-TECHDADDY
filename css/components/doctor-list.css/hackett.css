@@ -77,8 +77,8 @@ body {
 }
 #list .case-type {
     font-weight: 100;
-    font-size: 2.9rem;
     padding-bottom: 20px;
+    font-size: 2.9rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .9s;

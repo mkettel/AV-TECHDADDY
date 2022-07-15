@@ -7,6 +7,16 @@
 @mixin flexbox() {
     display: -webkit-box;
 }
+/*COMPONENTS
+
+ANIMATION TEXT FADE 
+color: transparent;
+animation: text_reveal .5s ease forwards;
+animation-delay: .4s;
+THIS IS USED TO FADE TEXT AND CAN BE MODIFIED AS NEEDED 
+
+*/
+
 html {
     scroll-behavior: smooth;
 }

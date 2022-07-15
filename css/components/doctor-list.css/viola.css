@@ -81,7 +81,7 @@ body {
     padding-bottom: 20px;
     color: transparent;
     animation: text_reveal .5s ease forwards;
-    animation-delay: .9s;
+    animation-delay: .8s;
 }
 #list .doctor-list {
     flex-direction: row;
@@ -108,6 +108,12 @@ body {
 }
 #list .description {
     margin-top: 10px;
+}
+#list .doctor-list .explain {
+    font-weight: 150;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
 }
 #list .description li {
     font-size: 1.2rem;
@@ -140,34 +146,25 @@ hr {
 hr #video-separator {
     border: 1px solid gray;
 }
-#list .routing-help {
-    text-decoration: none;
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
+
+/*This is the area i made the links grow and be black */
+/* I created my own div element for the link so that i can act the grow on it */
+#list .grow {
     transition: transform .3s;
 }
-#list .routing-help:hover {
-    transform: scale(2);
-    transition-delay: .1s;
+#list .grow:hover {
+    transform: scale(1.03);
+    transition-delay: .05s;
 }
-#list .description p {
+#list .arthrex {
+    color: rgb(69, 23, 23);
+    text-decoration: none;
+    font-weight: 200;
     text-align: center;
-    font-weight: 500;
+    font-size: 1.1rem;
 }
-/*This is the spot where i added the link for more Arthrex videos */
-#list .description p {
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
-}
-#list .description p .sandn {
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
-}
-#list .description p .sandn:hover  {
-    color: blue;
+#list .link-a {
+    text-align: center;
 }
 
 /* END DOCTOR VIDEOS SECTION */

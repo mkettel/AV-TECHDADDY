@@ -48,7 +48,7 @@ body {
    /*  margin-top: 100px; This is if i want to make navbar sticky */
     text-align: center;
     font-weight: 200;
-    font-size: 3.8rem;
+    font-size: 4.5rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
@@ -62,7 +62,7 @@ body {
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
     font-weight: 200;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
    /* margin-bottom: 30px; This is if I want to make navbar sticky */
 }
 /* Doctor Title Section */
@@ -102,7 +102,7 @@ body {
     margin-top: 10px;
 }
 #list .description li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 250;
     line-height: 1.9;
     color: transparent;
@@ -132,6 +132,26 @@ hr {
 hr #video-separator {
     border: 1px solid gray;
 }
+
+/*LINK CSS FOR NICE LOOKING ASS LINK ASS */
+#list .grow {
+    transition: transform .3s;
+}
+#list .grow:hover {
+    transform: scale(1.05);
+    transition-delay: .05s;
+}
+#list .arthrex {
+    color: rgb(69, 23, 23);
+    text-decoration: none;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#list .link-a {
+    text-align: center;
+}
+
 /* END DOCTOR VIDEOS SECTION */
 
 

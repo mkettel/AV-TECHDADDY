@@ -77,8 +77,8 @@ body {
 }
 #list .case-type {
     font-weight: 100;
-    font-size: 2.9rem;
     padding-bottom: 20px;
+    font-size: 2.9rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .9s;
@@ -154,6 +154,9 @@ hr #video-separator {
 #list .description p {
     text-align: center;
     font-weight: 500;
+}
+#list .description .explain {
+    font-weight: 150;
 }
 /*This is the spot where i added the link for more Arthrex videos */
 #list .description p {

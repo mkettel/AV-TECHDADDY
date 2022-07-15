@@ -50,7 +50,7 @@ body {
    /*  margin-top: 100px; This is if i want to make navbar sticky */
     text-align: center;
     font-weight: 200;
-    font-size: 3.8rem;
+    font-size: 4.5rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
@@ -64,7 +64,7 @@ body {
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
     font-weight: 200;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
    /* margin-bottom: 30px; This is if I want to make navbar sticky */
 }
 /* Doctor Title Section */

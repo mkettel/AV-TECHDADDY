@@ -1,3 +1,10 @@
+/*COMPONENTS
+ANIMATION TEXT FADE 
+color: transparent;
+animation: text_reveal .5s ease forwards;
+animation-delay: .4s;
+THIS IS USED TO FADE TEXT AND CAN BE MODIFIED AS NEEDED */
+
 /* Navbar CSS */
 #navbar .navbar-brand {
     font-size: 1.6rem;
@@ -48,7 +55,7 @@ body {
    /*  margin-top: 100px; This is if i want to make navbar sticky */
     text-align: center;
     font-weight: 200;
-    font-size: 4.5rem;
+    font-size: 4.4rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
@@ -77,11 +84,11 @@ body {
 }
 #list .case-type {
     font-weight: 100;
+    padding-bottom: 25px;
     font-size: 2.9rem;
-    padding-bottom: 20px;
     color: transparent;
-    animation: text_reveal .5s ease forwards;
-    animation-delay: .9s;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
 }
 #list .doctor-list {
     flex-direction: row;
@@ -140,36 +147,6 @@ hr {
 hr #video-separator {
     border: 1px solid gray;
 }
-#list .routing-help {
-    text-decoration: none;
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
-    transition: transform .3s;
-}
-#list .routing-help:hover {
-    transform: scale(2);
-    transition-delay: .1s;
-}
-#list .description p {
-    text-align: center;
-    font-weight: 500;
-}
-/*This is the spot where i added the link for more Arthrex videos */
-#list .description p {
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
-}
-#list .description p .sandn {
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
-}
-#list .description p .sandn:hover  {
-    color: blue;
-}
-
 /* END DOCTOR VIDEOS SECTION */
 
 
@@ -283,3 +260,6 @@ hr #video-separator {
 }
 
 /* END RIGHT CONTAINER */
+
+
+
