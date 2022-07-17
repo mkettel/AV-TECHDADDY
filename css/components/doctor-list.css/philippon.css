@@ -173,6 +173,24 @@ hr #video-separator {
     color: blue;
 }
 
+/* CSS for link to other pages */
+#list .grow {
+    transition: transform .3s;
+}
+#list .grow:hover {
+    transform: scale(1.03);
+    transition-delay: .05s;
+}
+#list .arthrex {
+    color: rgb(69, 23, 23);
+    text-decoration: none;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.1rem;
+}
+#list .link-a {
+    text-align: center;
+}
 /* END DOCTOR VIDEOS SECTION */
 
 

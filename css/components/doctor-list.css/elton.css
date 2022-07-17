@@ -156,18 +156,22 @@ hr #video-separator {
     font-weight: 500;
 }
 /*This is the spot where i added the link for more Arthrex videos */
-#list .description p {
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
+#list .grow {
+    transition: transform .3s;
 }
-#list .description p .arthrex {
-    color: transparent;
-    animation: text_reveal .7s ease forwards;
-    animation-delay: 1s;
+#list .grow:hover {
+    transform: scale(1.03);
+    transition-delay: .05s;
 }
-#list .description p .arthrex:hover  {
-    color: blue;
+#list .arthrex {
+    color: rgb(69, 23, 23);
+    text-decoration: none;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.1rem;
+}
+#list .link-a {
+    text-align: center;
 }
 
 /* END DOCTOR VIDEOS SECTION */
