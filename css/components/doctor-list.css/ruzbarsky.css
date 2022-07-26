@@ -77,8 +77,8 @@ body {
 }
 #list .case-type {
     font-weight: 100;
-    padding-bottom: 25px;
     font-size: 2.9rem;
+    padding-bottom: 20px;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .9s;
@@ -88,6 +88,7 @@ body {
     justify-content: space-around;
     flex-basis: 100%;
     text-align: center;
+    
 }
 #list .doctor-list h2 {
     font-size: 1.9rem;
@@ -107,6 +108,9 @@ body {
 }
 #list .description {
     margin-top: 10px;
+}
+#list .description .explain {
+    font-weight: 150;
 }
 #list .description li {
     font-size: 1.2rem;
@@ -139,8 +143,22 @@ hr {
 hr #video-separator {
     border: 1px solid gray;
 }
-
-/* CSS for link to other pages */
+#list .routing-help {
+    text-decoration: none;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+    transition: transform .3s;
+}
+#list .routing-help:hover {
+    transform: scale(2);
+    transition-delay: .1s;
+}
+#list .description p {
+    text-align: center;
+    font-weight: 500;
+}
+/*This is the spot where i added the link for more Arthrex videos */
 #list .grow {
     transition: transform .3s;
 }
@@ -271,6 +289,3 @@ hr #video-separator {
 }
 
 /* END RIGHT CONTAINER */
-
-
-

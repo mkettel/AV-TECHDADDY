@@ -28,7 +28,9 @@ body {
 
 /* Doctor Title Section */
 #title {
-    background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    /*background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url("/images/sunset\ moab.JPG");
+     i could put my own image here if i find a good one*/
+    background-image: linear-gradient(rgba(0,0,0,.4) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
     background-size: cover;
     margin-bottom: 30px;
 }
@@ -38,17 +40,17 @@ body {
     justify-content: center;
     min-height: 45vh;
     padding-top: 70px;
-
 }
 #title .title {
     flex-direction: column;
     max-width: 70%;
 }
+
 #title .doctor-heading h1 {
    /*  margin-top: 100px; This is if i want to make navbar sticky */
     text-align: center;
-    font-weight: 200;
-    font-size: 4.5rem;
+    font-weight: 220;
+    font-size: 3.8rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
@@ -61,13 +63,62 @@ body {
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
-    font-weight: 200;
+    font-weight: 250;
     font-size: 1.3rem;
    /* margin-bottom: 30px; This is if I want to make navbar sticky */
 }
-/* Doctor Title Section */
+/* NAVIGATION AREA */
+#title .grow {
+    transition: transform .3s;
+}
+#title .grow:hover {
+    transform: scale(1.03);
+    transition-delay: .05s;
+}
+#title .arthrex {
+    color: rgb(69, 23, 23);
+    text-decoration: none;
+    font-weight: 250;
+    text-align: center;
+    font-size: 1.1rem;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .85s;
+}
+#title .link {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    flex-direction: row;
+}
+#title .link p {
+    width: 20%;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+}
+#title .navigation {
+    display: flex;
+    justify-content: space-around;
+    color: transparent;
+    animation: text_reveal_white .7s ease forwards;
+    animation-delay: .8s;
+}
+#title .navigation h2 {
+    font-weight: 300;
+    padding-top: 20px;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+}
+/* END NAVIGATION AREA */
+/* COMPANY Title Section */
 
-/* DOCTOR VIDEO SECTION */
+/* COMPANY SECTION */
 #list .list {
     display: flex;  
     flex-direction: row;
@@ -77,8 +128,8 @@ body {
 }
 #list .case-type {
     font-weight: 100;
-    padding-bottom: 25px;
-    font-size: 2.9rem;
+    padding-bottom: 35px;
+    font-size: 2.5rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .9s;
@@ -90,7 +141,7 @@ body {
     text-align: center;
 }
 #list .doctor-list h2 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     text-align: center;
     font-weight: 300;
     color: transparent;
@@ -128,7 +179,11 @@ body {
     animation: text_reveal_green .7s ease forwards;
     animation-delay: 1s;
 }
-
+#list .description .extra {
+    font-weight: 200;
+    margin-top: 10px;
+    text-align: center;
+}
 hr {
     border: 1px solid grey;
     margin-right: 50px;
@@ -139,8 +194,20 @@ hr {
 hr #video-separator {
     border: 1px solid gray;
 }
+/* USE THESE ATTRIBUTES WHEN ADDING A SIMPLE BLACK LINK IN THE TEXT*/
+#list .routing-help {
+    
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+    transition: transform .3s;
+}
+#list .routing-help:hover {
+    transform: scale(2);
+    transition-delay: .1s;
+}
 
-/* CSS for link to other pages */
+/* LINKS TO OTHER PAGES */
 #list .grow {
     transition: transform .3s;
 }
@@ -158,7 +225,69 @@ hr #video-separator {
 #list .link-a {
     text-align: center;
 }
+/* LINKS TO OTHER PAGES */
+
 /* END DOCTOR VIDEOS SECTION */
+
+/* DOCTORS THAT USE SECTION */
+/* Header and main formatting */
+#client .client {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-height: 400px;
+    padding-bottom: 45px;
+}
+#client .client-header {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+#client .client-header h2 {
+    font-weight: 330;
+    font-size: 2rem;
+}
+/* Header and main formatting */
+/* LEFT SIDE OF DOC LIST */
+#client .client-left {
+    width: 50%;
+}
+
+#client .client-left h2 {
+    font-weight: 200;
+    transition: transform .3s;
+    line-height: 1.5;
+}
+#client .client-left h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#client .client-left h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+}
+/* LEFT SIDE OF DOC LIST */
+/* RIGHT SIDE OF DOC LIST */
+#client .client-right {
+    width: 50%;
+}
+#client .client-right h2 {
+    font-weight: 200;
+    transition: transform .3s;
+    line-height: 1.5;
+}
+#client .client-right h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#client .client-right h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+}
+/* RIGHT SIDE OF DOC LIST */
 
 
 /*END doctor list section*/
@@ -166,6 +295,16 @@ hr #video-separator {
     100% {
         color: black;
         text-shadow: .1px .1px .5px white;
+        
+    }
+}
+@keyframes text_reveal_white {
+    100% {
+        color: black;
+        text-shadow: .5px .5px .5px white;
+        border-top: .5px solid rgb(107, 94, 94);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
        
     }
 }
@@ -200,7 +339,7 @@ hr #video-separator {
 /*MAIN FOOTER BACKGROUND AND STYLE */
 #footer-2 {
     background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -212,7 +351,6 @@ hr #video-separator {
     max-height: 100px;
 }
 /*MAIN FOOTER BACKGROUND AND STYLE */
-
 /*FOOTER HEADER*/
 #footer-2 .footer-header {
     text-align: center;
@@ -232,7 +370,6 @@ hr #video-separator {
     text-transform: uppercase;
 }
 /* END FOOTER HEADER */
-
 /* LEFT CONTAINER */
 #footer-2 .footer-left {
     width: 50%;

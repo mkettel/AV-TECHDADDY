@@ -179,6 +179,11 @@ body {
     animation: text_reveal_green .7s ease forwards;
     animation-delay: 1s;
 }
+#list .description .extra {
+    font-weight: 200;
+    margin-top: 10px;
+    text-align: center;
+}
 
 hr {
     border: 1px solid grey;
@@ -270,7 +275,7 @@ hr #video-separator {
     100% {
         color: black;
         text-shadow: .1px .1px .5px white;
-        border-top: ;
+    
     }
 }
 @keyframes text_reveal_white {
