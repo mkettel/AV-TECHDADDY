@@ -304,3 +304,23 @@ hr #video-separator {
 }
 
 /* END RIGHT CONTAINER */
+
+/* IPHONE DIMENSIONS */
+@media only screen and  (min-width: 200px) and (max-width: 600px) {
+    #title .doctor-heading h1 {
+        font-size: 2.9rem;
+    }
+    #title .description p {
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    #list .video {
+        border-radius: 10px;
+        margin-top: 20px;
+        color: transparent;
+        animation: text_reveal .7s ease forwards;
+        animation-delay: 1s;
+        width: 98%;
+    }
+
+}
