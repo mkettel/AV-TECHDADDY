@@ -83,7 +83,7 @@ hr {
 /*MAIN FOOTER BACKGROUND AND STYLE */
 #footer-2 {
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1499988921418-b7df40ff03f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIyfHxuYXR1cmV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -182,3 +182,15 @@ hr {
     }
 }
 /*Media Scaling*/
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen and  (min-width: 200px) and (max-width: 600px) {
+    #title .doctor-heading h1 {
+        font-size: 3.1rem;
+    }
+    #title .description p {
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+}
