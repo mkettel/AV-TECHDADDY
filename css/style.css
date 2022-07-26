@@ -683,7 +683,7 @@ different child numbers*/
         display: inline-block;
     }
     #header .nav-list ul li a {
-        font-size: 1.4rem;
+        font-size: 2.1rem;
         font-weight: 200;
     }
     #header .nav-list ul a::after {
