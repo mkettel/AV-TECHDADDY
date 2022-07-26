@@ -409,5 +409,28 @@ hr #video-separator {
 
 /* END RIGHT CONTAINER */
 
-
+/* IPHONE DIMENSIONS */
+@media only screen and  (min-width: 200px) and (max-width: 600px) {
+    #title .doctor-heading h1 {
+        font-size: 4rem;
+    }
+    #title .description p {
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    #list .video {
+        border-radius: 15px;
+        margin-top: 20px;
+        color: transparent;
+        animation: text_reveal .7s ease forwards;
+        animation-delay: 1s;
+        width: 98%;
+    }
+    #list .case-type {
+        font-size: 1.9rem;
+    }
+    #client .client h2 a {
+        font-size: 1.5rem;
+    }
+}
 

@@ -28,7 +28,7 @@ body {
 
 /* Doctor Title Section */
 #title {
-    background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    background-image: url(https://images.unsplash.com/photo-1536637304349-9380cadaf33a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjk1fHxuYXR1cmV8ZW58MHwwfDB8d2hpdGV8&auto=format&fit=crop&w=700&q=60);
     background-size: cover;
     margin-bottom: 30px;
 }
@@ -218,7 +218,7 @@ hr #video-separator {
 /*MAIN FOOTER BACKGROUND AND STYLE */
 #footer-2 {
     background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    background-image: url(https://images.unsplash.com/photo-1536637304349-9380cadaf33a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjk1fHxuYXR1cmV8ZW58MHwwfDB8d2hpdGV8&auto=format&fit=crop&w=700&q=60);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -289,3 +289,25 @@ hr #video-separator {
 }
 
 /* END RIGHT CONTAINER */
+
+/* IPHONE DIMENSIONS */
+@media only screen and  (min-width: 200px) and (max-width: 600px) {
+    #title .doctor-heading h1 {
+        font-size: 2.2rem;
+    }
+    #title .description p {
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    #list .video {
+        border-radius: 15px;
+        margin-top: 20px;
+        color: transparent;
+        animation: text_reveal .7s ease forwards;
+        animation-delay: 1s;
+        width: 98%;
+    }
+    #list .case-type {
+        font-size: 2.1rem;
+    }
+}
