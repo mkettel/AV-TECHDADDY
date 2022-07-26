@@ -71,7 +71,7 @@ body {
     color: transparent;
     animation: text_reveal .9s ease forwards;
     animation-delay: 1.2s;
-    text-decoration: dashed;
+    text-decoration: none;
 }
 #list .doctor-list p:hover {
     color: white;
