@@ -240,6 +240,7 @@ html{
 /* I could add more child elements using the syntax above and putting
 different child numbers*/
 
+/* disclaimer button */
 #hero .cta {
     display: inline-block;
     padding: 10px 20px;
@@ -260,6 +261,7 @@ different child numbers*/
     color: white;
     background-color: crimson;
 }
+/* disclaimer button */
 
 /* end hero setion */
 
@@ -665,3 +667,51 @@ different child numbers*/
 }
 
 /* END media query for tablet */
+
+/* IPHONE DIMENIONS */
+
+@media only screen and  (min-width: 200px) and (max-width: 700px) {
+    /* Homepage font size for header */
+    #hero h1 {
+        font-size: 4rem;
+    }
+    #hero .cta {
+        font-size: 1.2rem;
+    }
+
+    #header .nav-list ul li {
+        display: inline-block;
+    }
+    #header .nav-list ul li a {
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+    #header .nav-list ul a::after {
+        display: none;
+    }
+
+    /* Services section width */
+    #services .service-top {
+        width: 90%;
+    }
+    #services .service-bottom .service-item-4 {
+       padding-left: 10px;
+       padding-right: 10px;
+        margin: 2%;
+    }
+    #services .service-bottom .service-item-1 {
+        margin: 1.5%;
+    }
+    #services .service-bottom .service-item-2 {
+        margin: 1.5%;
+    }
+    #services .service-bottom .service-item-3 {
+        margin: 1.5%;
+    }
+
+    /* Contact Section Width */
+    #contact .contact-items {
+        width: 95%;
+    }
+
+}
