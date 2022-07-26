@@ -315,7 +315,7 @@ hr #video-separator {
         font-weight: 200;
     }
     #list .video {
-        border-radius: 10px;
+        border-radius: 20px;
         margin-top: 20px;
         color: transparent;
         animation: text_reveal .7s ease forwards;
