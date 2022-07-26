@@ -1,0 +1,388 @@
+/* Navbar CSS */
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+    transition: transform .3s;
+}
+#navbar .navbar-brand:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+body {
+    background-color: white;
+}
+#navbar .navbar {
+   /* position: fixed; This is if i want to make the bar sticky */
+    width: 100%;
+}
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+}
+#navbar .nav-item {
+    transition: transform .3s;
+}
+#navbar .nav-item:hover {
+    transform: scale(1.015);
+    transition-delay: .1s;
+}
+/* END Navbar CSS */
+
+/* Doctor Title Section */
+#title {
+    /*background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url("/images/sunset\ moab.JPG");
+     i could put my own image here if i find a good one*/
+    background-image: linear-gradient(rgba(0,0,0,.4) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+#title .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45vh;
+    padding-top: 70px;
+}
+#title .title {
+    flex-direction: column;
+    max-width: 70%;
+}
+
+#title .doctor-heading h1 {
+   /*  margin-top: 100px; This is if i want to make navbar sticky */
+    text-align: center;
+    font-weight: 220;
+    font-size: 3.8rem;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .4s;
+}
+#title .description {
+    margin-top: 10px;
+}
+#title .description p {
+    text-align: center;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+    font-weight: 250;
+    font-size: 1.3rem;
+   /* margin-bottom: 30px; This is if I want to make navbar sticky */
+}
+/* NAVIGATION AREA */
+#title .grow {
+    transition: transform .3s;
+}
+#title .grow:hover {
+    transform: scale(1.03);
+    transition-delay: .05s;
+}
+#title .arthrex {
+    color: rgb(69, 23, 23);
+    text-decoration: none;
+    font-weight: 250;
+    text-align: center;
+    font-size: 1.1rem;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .85s;
+}
+#title .link {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    flex-direction: row;
+}
+#title .link p {
+    width: 30%;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+}
+#title .navigation {
+    display: flex;
+    justify-content: space-around;
+    color: transparent;
+    animation: text_reveal_white .7s ease forwards;
+    animation-delay: .8s;
+}
+#title .navigation h2 {
+    font-weight: 300;
+    padding-top: 20px;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+}
+/* END NAVIGATION AREA */
+/* COMPANY Title Section */
+
+/* COMPANY SECTION */
+#list .list {
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; /* -> where to layout the faxitron videos n shit */
+    margin-bottom: 20px;
+}
+#list .case-type {
+    font-weight: 100;
+    padding-bottom: 35px;
+    font-size: 2.5rem;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .9s;
+}
+#list .doctor-list {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 100%;
+    text-align: center;
+}
+#list .doctor-list h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: 300;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .9s;
+    
+}
+#list .video {
+    border-radius: 10px;
+    margin-top: 20px;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+}
+#list .description {
+    margin-top: 10px;
+}
+#list .description li {
+    font-size: 1.2rem;
+    font-weight: 250;
+    line-height: 1.9;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+}
+#list .description li span {
+    text-transform: uppercase;
+    color: transparent;
+    animation: text_reveal_red .8s ease forwards;
+    animation-delay: 1s;
+}
+#list .description li .green-text {
+    text-transform: uppercase;
+    color: transparent;
+    animation: text_reveal_green .7s ease forwards;
+    animation-delay: 1s;
+}
+
+hr {
+    border: 1px solid grey;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+hr #video-separator {
+    border: 1px solid gray;
+}
+/* USE THESE ATTRIBUTES WHEN ADDING A SIMPLE BLACK LINK IN THE TEXT*/
+#list .routing-help {
+    
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: 1s;
+    transition: transform .3s;
+}
+#list .routing-help:hover {
+    transform: scale(2);
+    transition-delay: .1s;
+}
+/* END DOCTOR VIDEOS SECTION */
+
+/* DOCTORS THAT USE SECTION */
+/* Header and main formatting */
+#client .client {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-height: 400px;
+    padding-bottom: 45px;
+}
+#client .client-header {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+#client .client-header h2 {
+    font-weight: 330;
+    font-size: 2rem;
+}
+/* Header and main formatting */
+/* LEFT SIDE OF DOC LIST */
+#client .client-left {
+    width: 50%;
+}
+
+#client .client-left h2 {
+    font-weight: 200;
+    transition: transform .3s;
+    line-height: 1.5;
+}
+#client .client-left h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#client .client-left h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+}
+/* LEFT SIDE OF DOC LIST */
+/* RIGHT SIDE OF DOC LIST */
+#client .client-right {
+    width: 50%;
+}
+#client .client-right h2 {
+    font-weight: 200;
+    transition: transform .3s;
+    line-height: 1.5;
+}
+#client .client-right h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#client .client-right h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+}
+/* RIGHT SIDE OF DOC LIST */
+
+
+/*END doctor list section*/
+@keyframes text_reveal {
+    100% {
+        color: black;
+        text-shadow: .1px .1px .5px white;
+        
+    }
+}
+@keyframes text_reveal_white {
+    100% {
+        color: black;
+        text-shadow: .5px .5px .5px white;
+        border-top: .5px solid rgb(107, 94, 94);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+       
+    }
+}
+@keyframes text_reveal_red {
+    100% {
+        color: red;
+    }
+}
+@keyframes text_reveal_green {
+    100% {
+        color: green;
+    }
+}
+
+/*Scale to tablet size */
+@media only screen and (min-width: 768px) {
+    #title .doctor-heading h1 {
+        font-size: 4rem;
+    }
+    #title .description p {
+        font-size: 1.25rem;
+        font-weight: 200;
+    }
+    #list .doctor-list p {
+        font-size: 1.1rem;
+        font-weight: 250px;
+    }
+}
+/*END Scale to tablet size*/
+
+/*TWO COLUMN FOOTER*/
+/*MAIN FOOTER BACKGROUND AND STYLE */
+#footer-2 {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer-2 .footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-height: 100px;
+}
+/*MAIN FOOTER BACKGROUND AND STYLE */
+/*FOOTER HEADER*/
+#footer-2 .footer-header {
+    text-align: center;
+}
+#footer-2 .footer-header {
+    transition: transform .3s;
+}
+#footer-2 .footer-header:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-header h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+/* END FOOTER HEADER */
+/* LEFT CONTAINER */
+#footer-2 .footer-left {
+    width: 50%;
+    transition: transform .3s;
+}
+#footer-2 .footer-left h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 120;
+}
+#footer-2 .footer-left h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-left h2 {
+    transition: transform .3s;
+}
+/* END LEFT CONTAINER */
+/* RIGHT CONTAINER */
+#footer-2 .footer-right h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 120;
+}
+#footer-2 .footer-right h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-right h2 {
+    transition: transform .3s;
+}
+#footer-2 .footer-right {
+    width: 50%;
+}
+
+/* END RIGHT CONTAINER */
+
+
+

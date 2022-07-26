@@ -75,6 +75,14 @@ body {
     justify-content: space-around; /* -> where to layout the faxitron videos n shit */
     margin-bottom: 20px;
 }
+#list .case-type {
+    font-weight: 100;
+    padding-bottom: 25px;
+    font-size: 2.9rem;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .9s;
+}
 #list .doctor-list {
     flex-direction: row;
     justify-content: space-around;

@@ -123,7 +123,11 @@ body {
     animation: text_reveal_green .7s ease forwards;
     animation-delay: 1s;
 }
-
+#list .description li a {
+    text-decoration: none;
+    text-decoration-color: black;
+    color: blue
+}
 hr {
     border: 1px solid grey;
     margin-right: 50px;
