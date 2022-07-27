@@ -507,24 +507,78 @@ different child numbers*/
 }
 
 /* End of contact section */
-/* Footer */
-#footer {
-    background-image: linear-gradient(180deg, #4c4c4c 0%, #1d1c1c 100%);
-    opacity: .8;
+/*TWO COLUMN FOOTER*/
+/*MAIN FOOTER BACKGROUND AND STYLE */
+#footer-2 {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1499988921418-b7df40ff03f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIyfHxuYXR1cmV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-#footer .footer {
-    min-height: 100px;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 45px;
+#footer-2 .footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-height: 100px;
+}
+/*MAIN FOOTER BACKGROUND AND STYLE */
+
+/*FOOTER HEADER*/
+#footer-2 .footer-header {
+    text-align: center;
+}
+#footer-2 .footer-header {
+    transition: transform .3s;
+}
+#footer-2 .footer-header:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-header h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 200;
     text-transform: uppercase;
-    filter: grayscale(0);
 }
-#footer .brand {
-    color: #e0dfde;
+/* END FOOTER HEADER */
+
+/* LEFT CONTAINER */
+#footer-2 .footer-left {
+    width: 50%;
+    transition: transform .3s;
 }
-#footer h3 {
-    color: gray;
+#footer-2 .footer-left h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 120;
+}
+#footer-2 .footer-left h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-left h2 {
+    transition: transform .3s;
+}
+/* END LEFT CONTAINER */
+/* RIGHT CONTAINER */
+#footer-2 .footer-right h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 120;
+}
+#footer-2 .footer-right h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-right h2 {
+    transition: transform .3s;
+}
+#footer-2 .footer-right {
+    width: 50%;
 }
 /* END of Footer */
 
@@ -708,10 +762,18 @@ different child numbers*/
     #services .service-bottom .service-item-3 {
         margin: 1.5%;
     }
-
     /* Contact Section Width */
     #contact .contact-items {
         width: 95%;
+    }
+    #footer-2 .footer-header h2 a {
+        font-size: 2rem;
+    }
+    #footer-2 .footer-left h2 a {
+        font-size: 1.2rem;
+    }
+    #footer-2 .footer-right h2 a {
+        font-size: 1.2rem;
     }
 
 }
