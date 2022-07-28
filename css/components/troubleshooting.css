@@ -7,7 +7,7 @@
     transition-delay: .1s;
 }
 #title {
-    background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.0) 40%), url("https://images.unsplash.com/photo-1515327866270-5801e8c8357f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA5fHx3aGl0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60");
+    background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.0) 40%), url(https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FsbXxlbnwwfDB8MHx8&auto=format&fit=crop&w=700&q=60);
     background-size: cover;
 }
 #navbar .navbar-brand {
@@ -197,5 +197,6 @@ hr {
     #title .description p {
         font-size: 1.1rem;
         font-weight: 200;
+        padding-bottom: 29px;
     }
 }
