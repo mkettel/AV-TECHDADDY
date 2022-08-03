@@ -1,0 +1,206 @@
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+    transition: transform .3s;
+}
+#navbar .navbar-brand:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+body {
+    background-color: white;
+}
+#navbar .navbar-brand {
+    font-size: 1.6rem;
+}
+#navbar .nav-item {
+    transition: transform .3s;
+}
+#navbar .nav-item:hover {
+    transform: scale(1.015);
+    transition-delay: .1s;
+}
+#title {
+    background-image: url(https://images.unsplash.com/photo-1597330957578-5b0ff087f2e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlsbSUyMHBob3RvZ3JhcGh5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60);
+    background-size: cover;
+    margin-bottom: 30px;
+    
+}
+#title .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45vh;
+}
+#title .title {
+    flex-direction: column;
+    max-width: 70%;
+}
+#title .doctor-heading h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 3.7rem;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: .4s;
+    padding-top: 20px;
+}
+#title .description {
+    margin-top: 10px;
+}
+#title .description p {
+    text-align: center;
+    color: transparent;
+    animation: text_reveal .7s ease forwards;
+    animation-delay: .8s;
+    font-weight: 290;
+    font-size: 1.1rem;
+}
+/*doctor list section*/
+#list .list {
+    display: flex;  
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+#list .doctor-list p {
+    transition: transform .2s;
+    font-size: 1.3rem;
+}
+#list .doctor-list p a {
+    font-weight: 220;
+    color: transparent;
+    animation: text_reveal .9s ease forwards;
+    animation-delay: 1.2s;
+    text-decoration: none;
+}
+#list .doctor-list p:hover {
+    color: white;
+    transform: scale(1.1);
+    transition-delay: .1s;
+}
+hr {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+/*END doctor list section*/
+
+
+/*TWO COLUMN FOOTER*/
+/*MAIN FOOTER BACKGROUND AND STYLE */
+#footer-2 {
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1597330957578-5b0ff087f2e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlsbSUyMHBob3RvZ3JhcGh5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer-2 .footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-height: 100px;
+}
+/*MAIN FOOTER BACKGROUND AND STYLE */
+
+/*FOOTER HEADER*/
+#footer-2 .footer-header {
+    text-align: center;
+}
+#footer-2 .footer-header {
+    transition: transform .3s;
+}
+#footer-2 .footer-header:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-header h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+/* END FOOTER HEADER */
+
+/* LEFT CONTAINER */
+#footer-2 .footer-left {
+    width: 50%;
+    transition: transform .3s;
+}
+#footer-2 .footer-left h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 120;
+}
+#footer-2 .footer-left h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-left h2 {
+    transition: transform .3s;
+}
+/* END LEFT CONTAINER */
+/* RIGHT CONTAINER */
+#footer-2 .footer-right h2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 120;
+}
+#footer-2 .footer-right h2:hover {
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+#footer-2 .footer-right h2 {
+    transition: transform .3s;
+}
+#footer-2 .footer-right {
+    width: 50%;
+}
+
+/* END RIGHT CONTAINER */
+
+/* Mobile edits */
+@keyframes text_reveal {
+    100% {
+        color: black;
+        text-decoration: none;
+       
+    }
+}
+
+/*Scale to tablet size */
+@media only screen and (min-width: 768px) {
+    #title .doctor-heading h1 {
+        font-size: 4rem;
+    }
+    #title .description p {
+        font-size: 19px;
+        font-weight: 250;
+    }
+    #list .doctor-list p {
+        font-size: 2rem;
+        font-weight: 250px;
+        text-align: center;
+    }
+}
+/*END Scale to tablet size*/
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen and  (min-width: 200px) and (max-width: 600px) {
+    #title .doctor-heading h1 {
+        font-size: 3.1rem;
+    }
+    #title .description p {
+        font-size: 1rem;
+        font-weight: 250;
+    }
+    #list .doctor-list p {
+        font-size: 1.6rem;
+        font-weight: 250px;
+        text-align: center;
+    }
+}
