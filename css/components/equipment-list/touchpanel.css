@@ -30,7 +30,7 @@ body {
 #title {
     /*background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url("/images/sunset\ moab.JPG");
      i could put my own image here if i find a good one*/
-    background-image: linear-gradient(rgba(0,0,0,.4) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    background-image: url(https://images.unsplash.com/photo-1597330957578-5b0ff087f2e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlsbSUyMHBob3RvZ3JhcGh5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60);
     background-size: cover;
     margin-bottom: 30px;
 }
@@ -294,14 +294,12 @@ hr #video-separator {
 @keyframes text_reveal {
     100% {
         color: black;
-        text-shadow: .1px .1px .5px white;
         
     }
 }
 @keyframes text_reveal_white {
     100% {
         color: black;
-        text-shadow: .5px .5px .5px white;
         border-top: .5px solid rgb(107, 94, 94);
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
@@ -326,7 +324,7 @@ hr #video-separator {
     }
     #title .description p {
         font-size: 1.25rem;
-        font-weight: 200;
+        font-weight: 250;
     }
     #list .doctor-list p {
         font-size: 1.1rem;
@@ -339,7 +337,7 @@ hr #video-separator {
 /*MAIN FOOTER BACKGROUND AND STYLE */
 #footer-2 {
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,.2) 0%, rgba(0,0,0,0.1) 40%), url(https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    background-image: url(https://images.unsplash.com/photo-1597330957578-5b0ff087f2e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlsbSUyMHBob3RvZ3JhcGh5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -379,7 +377,7 @@ hr #video-separator {
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
-    font-weight: 120;
+    font-weight: 170;
 }
 #footer-2 .footer-left h2:hover {
     transform: scale(1.07);
@@ -394,7 +392,7 @@ hr #video-separator {
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
-    font-weight: 120;
+    font-weight: 170;
 }
 #footer-2 .footer-right h2:hover {
     transform: scale(1.07);
@@ -416,7 +414,7 @@ hr #video-separator {
     }
     #title .description p {
         font-size: 1.2rem;
-        font-weight: 200;
+        font-weight: 250;
     }
     #list .video {
         border-radius: 15px;

@@ -47,7 +47,7 @@
 }
 #title .description p {
     font-size: 1.1rem;
-    font-weight: 200;
+    font-weight: 220;
     text-align: center;
     color: transparent;
     animation: text_reveal .7s ease forwards;
@@ -168,7 +168,7 @@ hr {
 @keyframes text_reveal {
     100% {
         color: black;
-        text-shadow: .1px .1px .5px white;
+
        
     }
 }
@@ -184,7 +184,7 @@ hr {
     }
     #title .description p {
         font-size: 19px;
-        font-weight: 200;
+        font-weight: 270;
     }
     #c-list .company-list p {
         font-size: 35px;

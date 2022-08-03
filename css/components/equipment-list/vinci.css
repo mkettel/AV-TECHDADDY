@@ -50,7 +50,7 @@ body {
    /*  margin-top: 100px; This is if i want to make navbar sticky */
     text-align: center;
     font-weight: 220;
-    font-size: 3.8rem;
+    font-size: 3.1rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
@@ -63,12 +63,11 @@ body {
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
-    font-weight: 270;
+    font-weight: 250;
     font-size: 1.3rem;
    /* margin-bottom: 30px; This is if I want to make navbar sticky */
 }
 /* NAVIGATION AREA */
-
 #title .grow {
     transition: transform .3s;
 }
@@ -85,7 +84,6 @@ body {
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .85s;
-   
 }
 #title .link {
     display: flex;
@@ -98,7 +96,7 @@ body {
     flex-direction: row;
 }
 #title .link p {
-    width: 30%;
+    width: 20%;
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .8s;
@@ -106,7 +104,6 @@ body {
 #title .navigation {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
     color: transparent;
     animation: text_reveal_white .7s ease forwards;
     animation-delay: .8s;
@@ -173,7 +170,7 @@ body {
 #list .description li span {
     text-transform: uppercase;
     color: transparent;
-    animation: text_reveal_red .8s ease forwards;
+    animation: text_reveal_blue .8s ease forwards;
     animation-delay: 1s;
 }
 #list .description li .green-text {
@@ -297,21 +294,23 @@ hr #video-separator {
 @keyframes text_reveal {
     100% {
         color: black;
+
         
     }
 }
 @keyframes text_reveal_white {
     100% {
         color: black;
+
         border-top: .5px solid rgb(107, 94, 94);
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
        
     }
 }
-@keyframes text_reveal_red {
+@keyframes text_reveal_blue {
     100% {
-        color: red;
+        color: blue;
     }
 }
 @keyframes text_reveal_green {
@@ -380,7 +379,7 @@ hr #video-separator {
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
-    font-weight: 170;
+    font-weight: 150;
 }
 #footer-2 .footer-left h2:hover {
     transform: scale(1.07);
@@ -395,7 +394,7 @@ hr #video-separator {
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
-    font-weight: 170;
+    font-weight: 150;
 }
 #footer-2 .footer-right h2:hover {
     transform: scale(1.07);
@@ -413,11 +412,11 @@ hr #video-separator {
 /* IPHONE DIMENSIONS */
 @media only screen and  (min-width: 200px) and (max-width: 600px) {
     #title .doctor-heading h1 {
-        font-size: 3.8rem;
+        font-size: 3.5rem;
     }
     #title .description p {
         font-size: 1.2rem;
-        font-weight: 250;
+        font-weight: 200;
     }
     #list .video {
         border-radius: 15px;
