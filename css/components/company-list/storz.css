@@ -410,7 +410,7 @@ hr #video-separator {
     background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/sunset\ moab.JPG");
     background-size: cover;
     margin: 10px 5%;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
 }
 #services .service-item-4 {
     flex-basis: 75%;
@@ -420,7 +420,7 @@ hr #video-separator {
     flex-direction: column;
     padding: 50px;
     border-radius: 10px;
-    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("https://images.unsplash.com/photo-1496765111150-918497b59c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fHNub3d8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60");
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("https://images.unsplash.com/photo-1502790671504-542ad42d5189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU3fHxuYXR1cmV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
     background-size: cover;
     margin: 10px 5%;
     letter-spacing: .2rem;
@@ -593,7 +593,8 @@ hr #video-separator {
         #services .service-bottom .service-item-4 {
            padding-left: 10px;
            padding-right: 10px;
-            margin: 2%;
+            margin: 1.5%;
+            flex: 10%;
         }
         #services .service-bottom .service-item-1 {
             margin: 1.5%;
