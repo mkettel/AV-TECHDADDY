@@ -382,6 +382,8 @@ hr #video-separator {
     background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fG5hdHVyZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60");
     background-size: cover;
     margin: 10px 5%;
+    letter-spacing: .2rem;
+
 }
 #services .service-item-2 {
     flex-basis: 75%;
@@ -394,6 +396,8 @@ hr #video-separator {
     background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/sunrise\ powell\ 2.JPG");
     background-size: cover;
     margin: 10px 5%;
+    letter-spacing: .2rem;
+
 }
 #services .service-item-3 {
     flex-basis: 75%;
@@ -406,6 +410,7 @@ hr #video-separator {
     background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/sunset\ moab.JPG");
     background-size: cover;
     margin: 10px 5%;
+    letter-spacing: .2rem;
 }
 #services .service-item-4 {
     flex-basis: 75%;
@@ -418,6 +423,7 @@ hr #video-separator {
     background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("https://images.unsplash.com/photo-1496765111150-918497b59c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fHNub3d8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60");
     background-size: cover;
     margin: 10px 5%;
+    letter-spacing: .2rem;
 }
 #services .service-bottom h2 {
     color: white;
