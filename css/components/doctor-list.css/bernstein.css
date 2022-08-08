@@ -101,9 +101,14 @@ body {
 #list .description {
     margin-top: 10px;
 }
+#list .description a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
 #list .description li {
     font-size: 1.2rem;
-    font-weight: 250;
+    font-weight: 200;
     line-height: 1.9;
     color: transparent;
     animation: text_reveal .7s ease forwards;
@@ -141,12 +146,14 @@ hr #video-separator {
     transform: scale(1.05);
     transition-delay: .05s;
 }
-#list .arthrex {
+#list .arthrex-1 {
     color: rgb(69, 23, 23);
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 210;
     text-align: center;
     font-size: 1.2rem;
+    padding-top: 20px;
+    font-style: italic;
 }
 #list .link-a {
     text-align: center;

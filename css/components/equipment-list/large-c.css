@@ -159,6 +159,11 @@ body {
 #list .description {
     margin-top: 10px;
 }
+#list .description a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}s
 #list .description li {
     font-size: 1.2rem;
     font-weight: 250;

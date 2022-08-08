@@ -109,6 +109,11 @@ body {
 #list .description {
     margin-top: 10px;
 }
+#list .description a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
 #list .doctor-list .explain {
     font-weight: 150;
     color: transparent;
