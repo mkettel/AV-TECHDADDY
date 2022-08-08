@@ -156,16 +156,18 @@ hr #video-separator {
     transform: scale(1.03);
     transition-delay: .05s;
 }
+/*Link to other pages styling*/
 #list .arthrex {
     color: rgb(69, 23, 23);
     text-decoration: none;
     font-weight: 200;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 #list .link-a {
     text-align: center;
 }
+/*Link to other pages styling*/
 /* END DOCTOR VIDEOS SECTION */
 
 
@@ -297,5 +299,17 @@ hr #video-separator {
         animation-delay: 1s;
         width: 98%;
     }
+    /*Link to other pages styling*/
+#list .arthrex {
+    color: rgb(69, 23, 23);
+    text-decoration: none;
+    font-weight: 210;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#list .link-a {
+    text-align: center;
+}
+/*Link to other pages styling*/
 
 }

@@ -109,6 +109,9 @@ body {
 #list .description {
     margin-top: 10px;
 }
+#list .description .explain {
+    font-weight: 150;
+}
 #list .description a {
     text-decoration: none;
     color: black;
