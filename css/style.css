@@ -364,7 +364,7 @@ different child numbers*/
     flex-direction: column;
     padding: 50px;
     border-radius: 10px;
-    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/skiing film.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/skiing\ film.JPG");
     background-size: cover;
     margin: 10px 5%;
     letter-spacing: .2rem;
