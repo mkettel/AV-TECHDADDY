@@ -54,6 +54,7 @@ body {
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
+    letter-spacing: .2rem;
 }
 #title .description {
     margin-top: 10px;
@@ -133,6 +134,7 @@ body {
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .9s;
+    letter-spacing: .2rem;
 }
 #list .doctor-list {
     flex-direction: row;
@@ -178,6 +180,10 @@ body {
     color: transparent;
     animation: text_reveal_green .7s ease forwards;
     animation-delay: 1s;
+}
+#list .description .extra {
+    font-weight: 220;
+    text-align: center;
 }
 #list .arthrex-1 {
     color: rgb(69, 23, 23);
@@ -276,6 +282,160 @@ hr #video-separator {
 }
 /* RIGHT SIDE OF DOC LIST */
 
+/* Services INTEGRATION LINKS Section*/
+#services .services {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#services .section-title {
+    font-size: 3rem;
+    font-weight: 200;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#services .section-title span {
+    color: crimson;
+}
+#services .service-top {
+    width: 500px;
+    margin: 0 auto;
+}
+#services .service-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: .05rem;
+
+}
+#services .service-top span {
+    color: crimson;
+}
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#services .service-bottom h2 {
+    font-weight: 300;
+}
+#services .service-bottom h2:hover  {
+    transform: scale(1.2);
+    transition-delay: .1s;
+    transition: all .3s ease-in-out;
+}
+/* this is where i put the animation to make the doctor and shit go to black when hovering*/
+#services .list {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, black, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .3s ease-in-out;
+}
+#services .list::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all .3 ease-in-out;
+}
+#services .list:hover {
+    background-position: 0;
+}
+#services .list:hover::before {
+    width: 100%;
+}
+/* End hover effect section */
+
+#services .service-bottom h2 {
+    background-color: transparent;
+    box-shadow: none;
+}
+#services .service-item-1 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fG5hdHVyZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-item-2 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/sunrise\ powell\ 2.JPG");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-item-3 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("/images/sunset\ moab.JPG");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-item-4 {
+    flex-basis: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 40%), url("https://images.unsplash.com/photo-1496765111150-918497b59c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fHNub3d8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60");
+    background-size: cover;
+    margin: 10px 5%;
+}
+#services .service-bottom h2 {
+    color: white;
+    opacity: .8;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#services .service-bottom p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+#services .service-bottom h2:hover {
+    color: black;
+}
+/* End Services Section*/
 
 /*END doctor list section*/
 @keyframes text_reveal {
@@ -414,10 +574,32 @@ hr #video-separator {
         width: 98%;
     }
     #list .case-type {
-        font-size: 1.9rem;
+        font-size: 3rem;
     }
     #client .client h2 a {
         font-size: 1.5rem;
     }
+
+        /* Services section width */
+        #services .service-top {
+            width: 90%;
+        }
+        #services .service-bottom .service-item-4 {
+           padding-left: 10px;
+           padding-right: 10px;
+            margin: 2%;
+        }
+        #services .service-bottom .service-item-1 {
+            margin: 1.5%;
+            flex: 80%;
+        }
+        #services .service-bottom .service-item-2 {
+            margin: 1.5%;
+            flex: 10%;
+        }
+        #services .service-bottom .service-item-3 {
+            margin: 1.5%;
+            flex: 10%;
+        }
 }
 
