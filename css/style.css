@@ -636,20 +636,20 @@ different child numbers*/
         font-size: 5rem;
     }
     #services .service-bottom .service-item-1 {
-        flex-basis: 45%;
-        margin: 2.5%;
+        flex-basis: 46%;
+        margin: .5%;
     }
     #services .service-bottom .service-item-2 {
-        flex-basis: 45%;
-        margin: 2.5%;
+        flex-basis: 46%;
+        margin: .5%;
     }
     #services .service-bottom .service-item-3 {
-        flex-basis: 45%;
-        margin: 2.5%;
+        flex-basis: 46%;
+        margin: .5%;
     }
     #services .service-bottom .service-item-4 {
-        flex-basis: 45%;
-        margin: 2.5%;
+        flex-basis: 46%;
+        margin: .5%;
     }
     #disclaimer .disclaimer-header h1 {
         font-size: 5.5rem;
