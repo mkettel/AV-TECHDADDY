@@ -18,7 +18,7 @@
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/css/components/company-list/stryker.css">
+    <link rel="stylesheet" href="/css/components/troubleshoot/box-moving.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NP2JP259JN"></script>
@@ -75,7 +75,7 @@
                 <h1>CAMERA BOX MOVING<span></span></h1>
             </div>
             <div class="description">
-                <p>Below are videos and step-by-step directions on how to setup / troubleshoot the various Stryker equipment.
+                <p>Below are videos and step-by-step directions on how to move and setup the different camera boxes used in each OR.
                 </p>
             </div>
         </div>
@@ -85,10 +85,10 @@
                 <h2>Quick Navigation</h2>
             </div>
             <div class="link">
-                <p class="grow"><a class="arthrex" href="#boxes">Stryker Boxes</a></p>
-                <p class="grow"><a class="arthrex" href="#monitor-color">Arthrex Box</a></p>
-                <p class="grow"><a class="arthrex" href="#monitor-pip">Smith & Nephew Box</a></p>
-                <p class="grow"><a class="arthrex" href="#problems">Storz Box</a></p>
+                <p class="grow"><a class="arthrex" href="#stryker">Stryker Boxes</a></p>
+                <p class="grow"><a class="arthrex" href="#arthrex">Arthrex Box</a></p>
+                <p class="grow"><a class="arthrex" href="#sn">Smith & Nephew Box</a></p>
+                <p class="grow"><a class="arthrex" href="#storz">Storz Box</a></p>
             </div> 
     </section>
     <!--END title of page section-->
@@ -96,8 +96,8 @@
     <!--DOCTOR LIST SECTION-->
     <section id="list">
        <div class="list container">
+        <h1 class="case-type" id="stryker">STRYKER BOX</h1>
         <div class="doctor-list">
-            <h2 id="boxes">Stryker Box</h2>
             <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bU6_S-5vR3c"
              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -115,9 +115,8 @@
         </div>
         </div>
         <div class="list container">
-            <h1 class="case-type">Arthrex Box</h1>
+            <h1 class="case-type" id="arthrex">ARTHREX BOX</h1>
             <div class="doctor-list">
-                <h2 id="monitor-color">Changing Color Settings</h2>
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/2c6joQn35rY"
                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -132,8 +131,8 @@
             </div>
             </div>
             <div class="list container">
+                <h1 class="case-type" id="sn">SMITH & NEPHEW BOX</h1>
                 <div class="doctor-list">
-                    <h2 id="monitor-pip">Removing Picture Problems (PIP/POP)</h2>
                     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YZc-uHKzDiI"
                      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -146,43 +145,44 @@
                     <hr id="video-separator">
                 </div>
                 </div>
+                <div class="list container">
+                    <h1 class="case-type" id="storz">STORZ BOX</h1>
+                    <div class="doctor-list">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YuqBpiUO8zw" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <ol>
+                            <li>Take picture of setup in the back of the box then unplug all of the cables in the back and then move to the room in need</li>
+                            <li>The boxes should be color coded so plugging back in shouldn't be too difficult</li>
+                            <li>The room may have empty cables used for this box but if not then unplug from a different box that is not in use the:</li>
+                            <ul>
+                                <li>DVI or HDMI cable</li>
+                                <li>Power Cable</li>
+                                <li>Two small Accessory Cables</li>
+                            </ul>
+                            <li>Follow the cables to see which little encoder box they are coming from and look at front of it to see the name</li>
+                            <li>The name of it is what it is called on the Nurse Touchpanel so go over to the touchpanel and then select the one you choose</li>
+                            <p class="extra">It may not be called Storz on the touchpanel, this will depend on the name of the encoder you are using. Just look to see which one it is plugged into and that is what it will be called on the touchpanel.</p>
+                        </ol>
+                        <hr id="video-separator">
+                    </div>
+                    </div>
                     <div class="list container">
                         <div class="doctor-list">
                             <h2 id="problems">Common Problems</h2>
                         </div>
                         <div class="description">
-                            <ol>
+                            <ul>
                                 <li>The monitors turn off regularly so make sure to press the power button if you do not see anything on the monitors</li>
-                                <li>Cables will get unplugged in the back of the boxes so make sure to check periodically that everything is connected and working properly</li>
-                            </ol>
+                                <li>Just make sure that you have the cables all plugged in that the other boxes are using</li>
+                                <li>Look at other rooms to see how it is supposed to look if needed</li>
+                                <li>Make sure to route to the AIDA if you need to capture images</li>
+                            </ul>
                             <hr id="video-separator">
                         </div>
                         </div>
     </section>
-
-    <section id="client">
-        <div class="client-header">
-            <h2>Doctors that Use Stryker Boxes</h2>
-        </div>
-        <div class="client container">
-            <div class="client-left">
-                <h2><a href="/html/doctor-list/bernstein.html">DR. BERNSTEIN</a></h2>
-                <h2><a href="#">DR. FORD</a></h2>
-                <h2><a href="/html/doctor-list/hammaker.html">DR. HAMMAKER</a></h2>
-                <h2><a href="/html/doctor-list/hickman.html">DR. HICKMAN</a></h2>
-
-
-            </div>
-            <div class="client-right">
-                <h2><a href="/html/doctor-list/kohn.html">DR. KOHN</a></h2>
-                <h2><a href="/html/doctor-list/lisle.html">DR. LISLE</a></h2>
-                <h2><a href="/html/doctor-list/samuels.html">DR. SAMUELS</a></h2>
-                <h2><a href="/html/doctor-list/santa-maria.html">DR. SANTA MARIA</a></h2>
-            </div>
-        </div>
-    </section>
-
-
     <!--END DOCTOR LIST SECTION-->
     
     <!--Two column footer-->

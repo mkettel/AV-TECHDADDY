@@ -128,7 +128,8 @@ body {
 }
 #list .case-type {
     font-weight: 100;
-    padding-bottom: 35px;
+    padding-bottom: 11px;
+    padding-top: 10px;
     font-size: 2.5rem;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -413,7 +414,7 @@ hr #video-separator {
 /* IPHONE DIMENSIONS */
 @media only screen and  (min-width: 200px) and (max-width: 600px) {
     #title .doctor-heading h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     #title .description p {
         font-size: 1.2rem;
@@ -428,7 +429,7 @@ hr #video-separator {
         width: 98%;
     }
     #list .case-type {
-        font-size: 1.9rem;
+        font-size: 2.2rem;
     }
     #client .client h2 a {
         font-size: 1.5rem;

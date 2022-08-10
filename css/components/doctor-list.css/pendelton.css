@@ -134,6 +134,12 @@ body {
     animation: text_reveal_green .7s ease forwards;
     animation-delay: 1s;
 }
+/*The little paragraphs that describe shit */
+#list .description .extra {
+    text-align: center;
+    font-weight: 225;
+}
+/*The little paragraphs that describe shit */
 
 hr {
     border: 1px solid grey;
