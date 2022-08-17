@@ -932,6 +932,8 @@ different child numbers*/
     text-transform: uppercase;
     font-weight: 250;
     font-size: 3.5rem;
+    letter-spacing: 1rem;
+    text-shadow: 1px 1px 1px black;
 }
 .right {
     width: 40%;
@@ -950,6 +952,7 @@ different child numbers*/
     font-size: 3rem;
     margin: 10px 0px;
     text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 .right p {
     text-align: left;
