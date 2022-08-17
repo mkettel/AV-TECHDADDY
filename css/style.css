@@ -162,7 +162,8 @@ html{
     top: 0;
 }
 /*END HEADER SECTION*/
-/* hero Section */
+
+/* hero Section main page on load */
 #hero {
     background-image: url(https://www.uncovercolorado.com/wp-content/uploads/2020/06/vail-ski-resort-blue-sky-basin-powder.jpg);
     background-size: cover;
@@ -460,6 +461,78 @@ different child numbers*/
 }
 /*end of disclaimer section*/
 
+/*FAQ Section*/
+#faq {
+    display: flex;
+}
+#faq .faq {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#faq .section-title {
+    color: blue;
+    display: flex;
+}
+
+
+/* Doctor Calculator Section */
+#calc {
+
+}
+#calc h1 {
+    font-weight: 400;
+    font-size: 4.3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+#calc .title-form {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+}
+#calc .form-uname {
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#calc #nameForm {
+    text-align: center;
+}
+#calc .form-sub {
+    padding-top: 20px;
+}
+
+/*Button to submit */
+#calc #subButton {
+    padding: 7px 40px;
+    border-radius: 7%;
+    transition: transform .2s;
+    border: none;
+    letter-spacing: .1rem;
+}
+#calc #subButton:hover {
+    background-color: gray;
+    transform: scale(1.07);
+    transition-delay: .1s;
+}
+/*Button to submit */
+
+#calc #result {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    /*how do i get z-index to display result with dim background?*/
+}
+
+/* Doctor Calculator Section */
+
+
+
+
+
 /* contact section */
 
 #contact .contact {
@@ -495,10 +568,12 @@ different child numbers*/
     box-shadow: 0px 0px 9px 5px #0000002c;
     flex-direction: column;
     transition: .25s ease box-shadow;
-    background-color: #e1e2e2;
+    /*background-color: #e1e2e2;*/
+    background-color: #808DA3;
 }
 #contact .contact-item:hover {
     box-shadow: 0px 0px 3px 0 #0000003c;
+    background-color: rgb(39, 179, 226);
 }
 #contact .icon {
     width: 70px;
@@ -554,6 +629,7 @@ different child numbers*/
     font-size: 3rem;
     font-weight: 200;
     text-transform: uppercase;
+    letter-spacing: .3rem;
 }
 /* END FOOTER HEADER */
 
@@ -788,10 +864,26 @@ different child numbers*/
 
 
     }
-    /* Contact Section Width */
-    #contact .contact-items {
-        width: 95%;
+    /*Contact Area Sizing */
+    .container {
+        flex-direction: column;
+        width: 100%;
     }
+    #contacts .left {
+        width: 100%;
+        margin: 10px 20px;
+    }
+    #contacts .right {
+        width: 85%;
+        margin: 0;
+        margin-top: -250px;
+        margin-bottom: 20px;
+    }
+    #contacts .left h1 {
+        top: 75px;
+        font-size: 4rem;
+    }
+
     #footer-2 .footer-header h2 a {
         font-size: 2rem;
     }
@@ -802,4 +894,69 @@ different child numbers*/
         font-size: 1.2rem;
     }
 
+}
+
+
+
+
+
+/*new contact section to try out */
+#contacts {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contacts .contact {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    width: 50%;
+    height: 550px;
+    background: url("https://images.unsplash.com/photo-1576918171496-51d0e1dea36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGNoaWxsfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=700&q=60") no-repeat center / cover;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.left h1 {
+    position: relative;
+    top: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 250;
+    font-size: 3.5rem;
+}
+.right {
+    width: 40%;
+    min-height: 400px;
+    background-color: #2f3d3c;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    margin-left: -150px;
+}
+.right h1 {
+    font-weight: 200;
+    font-size: 3rem;
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+.right p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 190;
+}
+.right a {
+    text-decoration: none;
+    color: rgb(182, 182, 182);
 }
