@@ -397,7 +397,6 @@ different child numbers*/
     background-size: cover;
     margin: 10px 5%;
     letter-spacing: .2rem;
-
 }
 #services .service-item-4 {
     flex-basis: 75%;
@@ -530,71 +529,75 @@ different child numbers*/
 /* Doctor Calculator Section */
 
 
-
-
-
-/* contact section */
-
-#contact .contact {
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 0;
+/*new contact section to try out */
+#contacts {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-#contact h1 {
+#contacts .contact {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    width: 50%;
+    height: 550px;
+    background: url(/images/goodplantboy.PNG) no-repeat center / cover;
+    /*https://images.unsplash.com/photo-1576918171496-51d0e1dea36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGNoaWxsfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=700&q=60"*/
+    border-radius: 8px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    z-index: -1;
+}
+.left h1 {
+    position: relative;
+    top: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 250;
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    text-shadow: 1px 1px 2px black;
+    
+}
+.right {
+    width: 40%;
+    min-height: 400px;
+    background-color: #2f3d3c;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    margin-left: -150px;
+    z-index: 10; /*can make it so it appears above the other box but isn't needed to do so */
+}
+.right h1 {
+    font-weight: 200;
     font-size: 3rem;
-    font-weight: 400;
-    color: black;
-    margin-bottom: 10px;
+    margin: 10px 0px;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    text-align: center; 
-   
 }
-#contact .contact-items {
-    width: 425px;
+.right p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 190;
 }
-#contact .contact-item {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 9px 5px #0000002c;
-    flex-direction: column;
-    transition: .25s ease box-shadow;
-    /*background-color: #e1e2e2;*/
-    background-color: #808DA3;
-}
-#contact .contact-item:hover {
-    box-shadow: 0px 0px 3px 0 #0000003c;
-    background-color: rgb(39, 179, 226);
-}
-#contact .icon {
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-#contact .contact-info h2{
-    font-size: 2rem;
-    font-weight: 400;
-   
-}
-#contact .contact-info h3 {
-    font-size: 1.5rem;
-    font-weight: 200;
-    line-height: 2rem;
-}
-#contact .contact-info a {
+.right a {
     text-decoration: none;
-    color: crimson
+    color: rgb(182, 182, 182);
 }
 /* End of contact section */
+
 /*TWO COLUMN FOOTER*/
 /*MAIN FOOTER BACKGROUND AND STYLE */
 #footer-2 {
@@ -689,8 +692,9 @@ different child numbers*/
         text-shadow: 1.5px 1.5px 4px black;
     }
 }
-
 /* End Keyframes */
+
+
 /* media query for tablet */
 @media only screen and (min-width:576px) {
     .container, .container-sm {
@@ -900,66 +904,4 @@ different child numbers*/
 
 
 
-/*new contact section to try out */
-#contacts {
-    min-height: 60vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#contacts .contact {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.left {
-    width: 50%;
-    height: 550px;
-    background: url("https://images.unsplash.com/photo-1576918171496-51d0e1dea36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGNoaWxsfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=700&q=60") no-repeat center / cover;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-.left h1 {
-    position: relative;
-    top: 5px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 250;
-    font-size: 3.5rem;
-    letter-spacing: 1rem;
-    text-shadow: 1px 1px 1px black;
-}
-.right {
-    width: 40%;
-    min-height: 400px;
-    background-color: #2f3d3c;
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    justify-content: center;
-    padding: 30px;
-    color: white;
-    margin-left: -150px;
-}
-.right h1 {
-    font-weight: 200;
-    font-size: 3rem;
-    margin: 10px 0px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-}
-.right p {
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 190;
-}
-.right a {
-    text-decoration: none;
-    color: rgb(182, 182, 182);
-}
+

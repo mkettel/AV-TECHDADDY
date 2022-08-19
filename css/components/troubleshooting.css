@@ -1,6 +1,8 @@
 #navbar .navbar-brand {
     font-size: 1.6rem;
     transition: transform .3s ease-in-out;
+    letter-spacing: .3rem;
+
 }
 #navbar .navbar-brand:hover {
     transform: scale(1.07);
@@ -38,7 +40,8 @@
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: .4s;
-    
+    letter-spacing: .2rem;
+
 }
 #title .description {
     margin-top: 10px;
@@ -119,6 +122,8 @@ hr {
     font-size: 2rem;
     font-weight: 200;
     text-transform: uppercase;
+    letter-spacing: .3rem;
+
 }
 /* END FOOTER HEADER */
 
