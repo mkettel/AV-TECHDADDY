@@ -521,10 +521,14 @@ different child numbers*/
 
 #calc #result {
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 200;
     /*how do i get z-index to display result with dim background?*/
+    position: relative;
+    top: 20px;
+    z-index: 1;
 }
+
 
 /* Doctor Calculator Section */
 
@@ -692,6 +696,7 @@ different child numbers*/
         text-shadow: 1.5px 1.5px 4px black;
     }
 }
+
 /* End Keyframes */
 
 
