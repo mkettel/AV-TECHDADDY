@@ -9,11 +9,11 @@
 }
 /*COMPONENTS
 
-ANIMATION TEXT FADE 
+ANIMATION TEXT FADE
 color: transparent;
 animation: text_reveal .5s ease forwards;
 animation-delay: .4s;
-THIS IS USED TO FADE TEXT AND CAN BE MODIFIED AS NEEDED 
+THIS IS USED TO FADE TEXT AND CAN BE MODIFIED AS NEEDED
 
 */
 
@@ -188,7 +188,7 @@ html{
     background-color: black;
     opacity: .55;
     z-index: -1;
-    
+
 }
 #hero h1 {
     display: block;
@@ -569,7 +569,7 @@ different child numbers*/
     font-size: 3.5rem;
     letter-spacing: 1rem;
     text-shadow: 1px 1px 2px black;
-    
+
 }
 .right {
     width: 40%;
@@ -904,9 +904,3 @@ different child numbers*/
     }
 
 }
-
-
-
-
-
-
