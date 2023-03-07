@@ -69,20 +69,20 @@ body {
 
 /* DOCTOR VIDEO SECTION */
 #list .list {
-    display: flex;  
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; /* -> where to layout the faxitron videos n shit */
     margin-bottom: 20px;
-    
-    
+
+
 }
 #list .doctor-list {
     flex-direction: row;
     justify-content: space-around;
     flex-basis: 100%;
     text-align: center;
-    
+
 }
 #list .doctor-list h2 {
     font-size: 1.9rem;
@@ -91,7 +91,7 @@ body {
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: .9s;
-    
+
 }
 #list .video {
     border-radius: 10px;
@@ -145,7 +145,7 @@ hr #video-separator {
 }
 /* USE THESE ATTRIBUTES WHEN ADDING A SIMPLE BLACK LINK IN THE TEXT*/
 #list .routing-help {
-    
+
     color: transparent;
     animation: text_reveal .7s ease forwards;
     animation-delay: 1s;
@@ -163,7 +163,6 @@ hr #video-separator {
     100% {
         color: black;
         text-shadow: .1px .1px .5px white;
-       
     }
 }
 @keyframes text_reveal_red {

@@ -478,55 +478,40 @@ different child numbers*/
 
 
 /* Doctor Calculator Section */
-#calc {
-
+#calc .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-#calc h1 {
-    font-weight: 400;
-    font-size: 4.3rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
+.section-title {
+  padding: 10px;
+  padding-bottom: 15px;
 }
-#calc .title-form {
-    flex-direction: column;
-    text-align: center;
-    display: flex;
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#calc .form-uname {
-    font-size: 1.2rem;
-    padding-top: 10px;
-    padding-bottom: 5px;
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-#calc #nameForm {
-    text-align: center;
+#nameLabel {
+  width: 65%;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
-#calc .form-sub {
-    padding-top: 20px;
+.input-field {
+  height: 25px;
+  border-radius: 5px;
 }
-
-/*Button to submit */
-#calc #subButton {
-    padding: 7px 40px;
-    border-radius: 7%;
-    transition: transform .2s;
-    border: none;
-    letter-spacing: .1rem;
-}
-#calc #subButton:hover {
-    background-color: gray;
-    transform: scale(1.07);
-    transition-delay: .1s;
-}
-/*Button to submit */
-
-#calc #result {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 200;
-    /*how do i get z-index to display result with dim background?*/
-    position: relative;
-    top: 20px;
-    z-index: 1;
+#submit {
+  padding: 2px 35px;
+  margin: 15px 20px;
+  border-radius: 5px;
 }
 
 
