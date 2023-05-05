@@ -19,17 +19,17 @@ document.addEventListener('scroll',()=>{
 
 // <a> tag url prefix generator
 
-const links = document.querySelectorAll('a');
+// const links = document.querySelectorAll('a');
 
-links.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    const href = link.getAttribute('href');
-    const newHref = "/AV-TECHDADDY" + href;
-    link.setAttribute('href', newHref);
-    window.location.href = newHref;
-  });
-});
+// links.forEach(link => {
+//   link.addEventListener('click', event => {
+//     event.preventDefault();
+//     const href = link.getAttribute('href');
+//     const newHref = "/AV-TECHDADDY" + href;
+//     link.setAttribute('href', newHref);
+//     window.location.href = newHref;
+//   });
+// });
 
 
 // //this is one i took online of how to make result show up after text input. I need to do
